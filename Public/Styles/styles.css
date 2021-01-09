@@ -1,88 +1,180 @@
 body {
-  background-color: #000000;
-  border-color: #fca311;
+  margin: 0;
+  background-color: #ffffff;
+  border-color: #14213d;
   border-width: 5px;
   border-style: solid;
-  font-size: 1px;
-  margin: 0;
-  padding: 0;
-  text-align: center;
+  font-size: 10px;
 }
 
 a:link {
   text-decoration: none;
 }
 
-.head {
-  background-color: #000000;
-  left: 5px;
+ul {
+  list-style: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  position: fixed;
   margin-left: auto;
   margin-right: auto;
-  position: fixed;
+  left: 5px;
   right: 5px;
   transition: all 3s ease 0s;
+  padding: 0.6rem 20rem 0.6rem 20rem;
+  /* Do I need shadow? */
+  -webkit-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
 }
 
-.head-logo {
-  color: #fca311;
-  font-size: 3.5rem;
-  font-family: "Ubuntu", sans-serif;
-  margin: 1.5rem 0;
-}
-
-.head-logo a:visited {
-  color: #fca311;
-}
-
-.head-logo span {
-  color: #e5e5e5;
-}
-
-.head-logo span a:visited {
-  color: #e5e5e5;
-}
-
-.head-menu {
-  font-size: 2rem;
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-.head-menu ul {
-  list-style: none;
+.logo a {
+  color: #14213d;
+  font-size: 1.4rem;
   margin: 0;
-  padding: 0;
 }
 
-.head-menu li {
-  display: inline;
-  margin: 2rem;
+.logo a:visited {
+  color: #14213d;
 }
 
-.head-menu a:hover {
+.logo span {
   color: #fca311;
 }
 
-.head-menu a {
-  color: #e5e5e5;
+.logo span a:visited {
+  color: #fca311;
+}
+
+.main-nav {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.main-nav a:hover {
+  text-decoration: underline;
+  text-decoration-color: #fca311;
+  text-decoration-thickness: 0.2rem;
+}
+
+.main-nav a {
+  color: #14213d;
+  margin-left: 2.5rem;
 }
 
 .transparent {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0.3);
   transition: all 3s ease 0s;
 }
 
-.presentation {
-  background-color: #000000;
-  color: #e5e5e5;
-  padding: 12rem 10rem 12rem 10rem;
+.intro {
+  padding: 8rem 20rem 4rem 0;
+  margin: 0;
 }
 
-.presentation h2 {
-  font-size: 3rem;
+.intro h2 {
+  margin-right: 1rem;
 }
 
-.footer {
-  background-color: #f1f1f1;
-  height: 200rem;
+.intro-hello {
+  font-size: 1.5rem;
+  color: #14213d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.intro-developer {
+  text-align: right;
+  color: #fca311;
+  font-size: 1.2rem;
+  border-color: #14213d;
+  border-style: solid;
+  border-width: 0 0 6px 0;
+  position: relative;
+  bottom: 130px;
+  z-index: -1;
+}
+
+.intro-developer h2 {
+  margin: 2rem 1rem 1rem 1rem;
+}
+
+.intro-img {
+  margin-left: 20rem;
+  width: 18rem;
+}
+
+.intro-about {
+  margin-left: 20rem;
+  color: #14213d;
+}
+
+.intro-about h3 {
+  font-size: 1.6rem;
+  margin: 0;
+  text-decoration: underline;
+  text-decoration-color: #fca311;
+  text-decoration-thickness: 0.2rem;
+}
+
+.intro-about p {
+  font-size: 1.4rem;
+}
+
+.skills {
+  padding: 0 20rem;
+  color: #14213d;
+}
+
+.skills h3 {
+  font-size: 1.6rem;
+  margin: 0 0 1.2rem 0;
+  text-decoration: underline;
+  text-decoration-color: #fca311;
+  text-decoration-thickness: 0.2rem;
+}
+
+.skills i {
+  font-size: 8rem;
+}
+
+.skills i:hover {
+  color: #fca311;
+}
+
+.container-skills {
+  display: grid;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+/* @media (min-width: 769px) {
+  .header,
+  .main-nav {
+    display: flex;
+  }
+  .header {
+    flex-direction: column;
+    align-items: center;
+    .header {
+      width: 80%;
+      margin: 0 auto;
+      max-width: 1150px;
+    }
+  }
+}
+
+@media (min-width: 1025px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+} */

@@ -1,8 +1,8 @@
 
 $(window).scroll(function () {
     if ($(document).scrollTop() > 50) {
-        $('.head').addClass('transparent');
+        $('.header').addClass('transparent');
     } else {
-        $('.head').removeClass('transparent');
+        $('.header').removeClass('transparent');
     }
 });
