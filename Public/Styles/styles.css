@@ -24,8 +24,8 @@ ul {
   margin-right: auto;
   left: 5px;
   right: 5px;
-  transition: all 3s ease 0s;
-  padding: 0.6rem 20rem 0.6rem 20rem;
+  transition: all 2s ease 0s;
+  padding: 0.6rem 18rem 0.6rem 18rem;
   /* Do I need shadow? */
   -webkit-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
@@ -51,7 +51,7 @@ ul {
 }
 
 .main-nav {
-  font-size: 1rem;
+  font-size: 1.1rem;
   display: flex;
   align-items: center;
 }
@@ -68,17 +68,18 @@ ul {
 }
 
 .transparent {
-  background-color: rgba(255, 255, 255, 0.3);
-  transition: all 3s ease 0s;
+  background-color: rgba(255, 255, 255, 0.6);
+  transition: all 8s ease 0s;
 }
 
 .intro {
-  padding: 8rem 20rem 4rem 0;
+  padding: 8rem 0 2.5rem 0;
   margin: 0;
 }
 
 .intro h2 {
-  margin-right: 1rem;
+  margin-right: 18rem;
+  text-align: right;
 }
 
 .intro-hello {
@@ -102,16 +103,20 @@ ul {
 }
 
 .intro-developer h2 {
-  margin: 2rem 1rem 1rem 1rem;
+  margin: 2rem 18rem 1rem 1rem;
 }
 
 .intro-img {
-  margin-left: 20rem;
+  margin-left: 18rem;
   width: 18rem;
+  -webkit-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
 }
 
 .intro-about {
-  margin-left: 20rem;
+  margin-left: 18rem;
+  margin-right: 18rem;
   color: #14213d;
 }
 
@@ -127,8 +132,23 @@ ul {
   font-size: 1.4rem;
 }
 
+.intro-about a {
+  color: #14213d;
+  text-decoration: underline;
+  text-decoration-color: #14213d;
+  text-decoration-thickness: 0.15rem;
+}
+
+.intro-about a:visited {
+  color: #14213d;
+}
+
+.intro-about a:hover {
+  text-decoration-color: #fca311;
+}
+
 .skills {
-  padding: 0 20rem;
+  padding: 0 18rem 2.5rem 18rem;
   color: #14213d;
 }
 
@@ -141,7 +161,7 @@ ul {
 }
 
 .skills i {
-  font-size: 8rem;
+  font-size: 7rem;
 }
 
 .skills i:hover {
@@ -150,6 +170,88 @@ ul {
 
 .container-skills {
   display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 2rem;
+}
+
+.container-skills i {
+  text-align: center;
+}
+
+.container-skills p {
+  font-size: 2rem;
+  margin: 0.1rem 0 1rem 0;
+}
+
+.container-skills a:visited {
+  color: #14213d;
+}
+
+.container-skills a {
+  text-align: center;
+  margin: 0;
+}
+
+.contact {
+  border-color: #14213d;
+  border-style: solid;
+  border-width: 3px;
+  text-align: center;
+  margin: 0 18rem 0 18rem;
+}
+
+.contact h3 {
+  color: #14213d;
+  font-size: 1.6rem;
+  text-decoration: underline;
+  text-decoration-color: #fca311;
+  text-decoration-thickness: 0.2rem;
+}
+
+.button {
+  border-color: #14213d;
+  background-color: #ffffff;
+  border-width: 3px;
+  border-radius: 1px;
+  display: inline-block;
+  color: #14213d;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 13px 32px;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 0 0 1.8rem 0;
+}
+.button:hover {
+  font-size: 1.6rem;
+  margin: 0 0 1.7rem 0;
+}
+
+.fa-envelope {
+  margin-left: 10px;
+}
+
+.footer {
+  margin: 0 18rem 0 18rem;
+}
+
+.footer h3 {
+  color: #14213d;
+  font-size: 1.6rem;
+  text-decoration: underline;
+  text-decoration-color: #fca311;
+  text-decoration-thickness: 0.2rem;
+}
+
+.container-logo {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+}
+
+.container-logo i {
+  color: #14213d;
+  font-size: 2rem;
 }
 
 /* ================================= 
