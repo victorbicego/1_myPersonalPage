@@ -247,8 +247,8 @@ i {
   color: #14213d;
 }
 
-.carousel-item {
-  height: 450px;
+.w-100 {
+  padding: 20px 100px 40px 100px;
 }
 
 /* Here ends the projects section */
@@ -331,6 +331,7 @@ i {
     padding: 25px 30px 10px 30px;
     margin: 0;
   }
+
   h3 {
     font-size: 25px;
     font-weight: bold;
